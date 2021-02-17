@@ -1,0 +1,231 @@
+.pagePdf {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.profile {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+}
+
+.profile h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile .row {
+    padding-top: 30px;
+    border-radius: 15px;
+}
+
+.profile .avatar {
+    position: relative;
+    width: fit-content;
+    background-image: url(../assets/profile.jpg);
+    background-position: center; 
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile .avatar .btn-img {
+    transition: .5s ease;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile .avatar:hover .btn-img {
+    display: block;
+}
+
+.profile .avatar .btn-img span {
+padding: 10px 15px;
+background-color: rgba(219, 52, 68, 0.8);
+}
+
+.profile .avatar .btn-img span:hover {
+background-color: rgba(219, 52, 68, 1) !important;
+}
+
+.profile .name {
+    margin-bottom: 35px;
+}
+
+.profile .name h1{
+    font-size: 41px;
+}
+
+.profile .container-identity {
+    width: 100%;
+}
+
+.profile .spesialis {
+    margin-top: 35px;
+    width: 100%;
+    border-bottom: 3px solid #e1e1e1;
+    border-top: 3px solid #e1e1e1;
+}
+
+.profile .spesialis h2{
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.profile .about p {
+    font-size: 15px;
+}
+
+.profile .medium-editor-placeholder:after {
+    margin: unset !important;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width:100%;
+}
+
+.body-cv h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.body-cv {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+
+.body-cv .container-cv {
+    height: 100%;
+}
+
+.body-cv .sidebar-cv {
+    border-right: 3px solid #e1e1e1;
+}
+
+.body-cv .sidebar-cv .content-cv{
+    padding: 0px 10px 0px 10px;
+    height: 100%;
+}
+
+.body-cv .sidebar-cv .body p{
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+}
+
+.body-cv .sidebar-cv .row:not(:first-child) {
+    margin-top: 20px;
+}
+
+.body-cv .sidebar-cv .row {
+    padding: 0px 10px;
+}
+
+.body-cv .sidebar-cv .row .body:before {
+    content : "";
+    position: absolute;
+    bottom  : 0;
+    height  : 1px;
+    width   : 40%;  /* or 100px */
+    border-bottom: 3px solid #e1e1e1;
+}
+
+.body-cv .sidebar-cv .row .body {    
+    padding-bottom: 30px;
+}
+
+.body-cv .center-cv .content-cv{
+    padding: 0px 20px;
+    height: 100%;
+}
+
+.body-cv .center-cv .body p {
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+}
+
+.container-content .row {
+    position: relative;
+}
+
+.container-content .row:hover .options-list{
+    display: block;
+}
+
+.body-cv .center-cv .row:not(:first-child) {
+    margin-top: 20px;
+}
+
+.body-cv .center-cv .row .body:before {
+    content : "";
+    position: absolute;
+    bottom  : 0;
+    height  : 1px;
+    width   : 40%;  /* or 100px */
+    border-bottom: 3px solid #e1e1e1;
+}
+
+.body-cv .center-cv .row .body {
+padding-bottom: 30px;
+}
+
+.container-content .row .options-list {
+    float: right;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: -moz-min-content;    /* Firefox */
+    width: -webkit-min-content; /* Chrome */
+    width: min-content;
+    display: none;
+    
+}
+
+.container-content .options-list span{
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.container-content .options-list .add-new-block{
+    background-color: #25aae7;
+}
+
+.container-content .options-list .delete-block{
+    background-color: rgba(219, 52, 68, 0.8);
+}
+
+.sidebar-cv ol, .sidebar-cv ul {
+    padding-left: 1rem;
+}
+
+/* [contenteditable="true"].header {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 15px;
+} 
+[contenteditable="true"].header br {
+    display:none;
+}
+
+[contenteditable="true"].header * {
+    display:inline;
+    white-space:nowrap;
+}
+.medium-editor-placeholder:after {
+    margin: unset !important;
+} */
